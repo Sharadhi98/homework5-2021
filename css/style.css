@@ -84,7 +84,6 @@ nav a:hover{
 
 /* Requirement 3b code here*/
 .skip a:focus{
-  position: absolute;
   top: 0px;
 }
 
@@ -113,8 +112,8 @@ header{
   color: white;
   height: 400px; /* Parallax effect */
 
-  grid-column: 1/-1; /*Code 6a*/
-  grid-row: 1/span 1;/*Code 6b*/
+  grid-column: 1 / -1; /*Code 6a*/
+  grid-row: 1 / span 1;/*Code 6b*/
 
   /*Set background-image to header.jpg*/
   background-image: url("../images/header.jpg");/*Code 6c*/
@@ -127,12 +126,12 @@ header{
 
 /** Code 7a**/
 .about, .method, .clients, .contact{
-  grid-column: 2/ span 1;
+  grid-column: 2 / span 1;
 }
 
 /** Code 8a, 8b, 8c**/
 .about-image, .method-image, .clients-image, .contact-image{
-  grid-column: 1/-1;
+  grid-column: 1 / -1;
   max-height: 700px;
   overflow: hidden;
 }
@@ -173,11 +172,12 @@ header{
 
     /* Your code here code 10 */
     text-align: right;
-    vertical-align: middle;
+    /*vertical-align: middle;*/
   }
 
   .container{
     /*code for 11*/
+    display: grid;
     grid-template-columns: 50px auto 500px auto 50px;
     grid-template-rows: 400px 400px 400px 400px;
    
